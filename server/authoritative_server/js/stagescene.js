@@ -122,7 +122,6 @@ var StageScene = new Phaser.Class({
 					players[player.playerId].state = input.state;	
 				}
 			});
-			console.log(players);
 			io.in(window.roomId).emit('playerUpdates', players);
 		}
 	}
