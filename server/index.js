@@ -73,14 +73,14 @@ const port = process.env.PORT || 5000;
 app.use(express.static(__dirname + '/public'));
 
 app.get('/', function (req, res) {
-  res.sendFile(__dirname + '/plain_index.html');
+  res.sendFile(__dirname + '/index.html');
 });
 
 app.get('/game/:room', function (req, res) {
   const roomId = req.params.room;
   if (!doms[roomId])
     setupAuthoritativePhaser(roomId);
-  res.sendFile(__dirname + '/public/index.html');
+  res.sendFile(__dirname + '/public/game.html');
 });
 
 server.listen(port, () => {
