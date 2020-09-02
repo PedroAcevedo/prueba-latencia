@@ -1,0 +1,35 @@
+{
+  "name": "carnival-party",
+  "version": "1.0.0",
+  "description": "A Game for a doctoral thesis in psychology",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PedroAcevedo/Carnival-Party.git"
+  },
+  "keywords": [
+    "Serius",
+    "Games",
+    "Psychology"
+  ],
+  "author": "Pedro Acevedo - Daladier Jabba - Cirit Del Carmen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PedroAcevedo/Carnival-Party/issues"
+  },
+  "homepage": "https://github.com/PedroAcevedo/Carnival-Party#readme",
+  "dependencies": {
+    "@geckos.io/phaser-on-nodejs": "^1.2.3",
+    "canvas": "^2.6.1",
+    "datauri": "^2.0.0",
+    "express": "^4.17.1",
+    "jsdom": "^16.2.1",
+    "phaser": "^3.24.1",
+    "socket.io": "^2.3.0",
+    "webpack": "^4.44.1"
+  }
+}

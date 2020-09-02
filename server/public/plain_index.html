@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+     href='http://fonts.googleapis.com/css?family=Roboto:300,700' 
+     rel='stylesheet' 
+     type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&amp;display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title></title>
+  </head>
+  <style>
+      body{
+        display: flex;
+        background-color: black;
+        justify-content: center;
+      }
+
+    .game-board{
+        background-color: white;
+        width: 70%;
+        position: absolute;
+        height: 100%;
+    }
+    * {box-sizing: border-box;}
+
+    .wrapper {
+        height: 100%;
+        border: 2px solid #f76707;
+        border-radius: 5px;
+        background-color: #fff4e6;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, 25%);
+    }
+
+    .wrapper > div {
+        border: 2px solid #ffa94d;
+        border-radius: 5px;
+        background-color: #ffd8a8;
+        color: #d9480f;
+    }
+    .box1 {
+        grid-column: 1 / 2;
+        grid-row: 3 / 5;
+        overflow-y: scroll;
+    }
+
+    .box1 > h1{
+        text-align: center;
+    }
+
+    .box1 > ul {
+        list-style: none;   
+        color: gray;
+    }
+
+    .box2 {
+        grid-column: 4 / 5;
+        grid-row: 1 / 2;
+        overflow-y: scroll;
+    }
+
+    .box2 > h1{
+        text-align: center;
+    }
+
+    .box2 > ul {
+        list-style: none;   
+        color: gray;
+    }
+
+    .box3 {
+        display: flex;
+        grid-column: 4 / 5;
+        grid-row: 2 /  4;
+        justify-content: flex-start;
+        flex-direction: column;
+        font-size: medium;
+        align-content: flex-end;
+    }
+
+    .box3 > .messages{
+        height: 90%;
+        display: flex;
+        flex-direction: column ;
+        align-items: flex-start;
+        align-content: flex-end;
+    }
+
+    .box3 > .messages > p{
+        margin: 0;
+    }
+
+    .box3 > label{
+        display: flex;
+        width: 100%;    
+        bottom: 0;
+        justify-content: space-between;
+    }
+
+
+    .box3 > label > input{
+        width: 80%;
+    }
+
+
+    .box4 {
+    grid-column: 3 / 4;
+    grid-row: 4 / 5;
+    }
+    .box5 {
+    grid-column: 4 / 5;
+    grid-row: 4 / 5;
+    }
+        
+
+    </style>
+    </head>
+    <body>
+        <div class="game-board wrapper">
+                <div class="box1">
+                    <h1>Pistas</h1>
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+                    </ul>
+                </div>
+                <div class="box2">
+                    <h1>Tablero</h1>
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+
+                    </ul>
+                </div>
+                <div class="box3">
+                    <table class="main_div"> 
+                        <tr> 
+                            <td valign="top"><h1>GeeksforGeeks</h1></td> 
+                        </tr> 
+                        <tr> 
+                            <td valign="bottom">                        
+                                <p>Usuario1: Hola equipo.</p>
+                                <p>Usuario2: Hola, ¿Como estas?.</p>
+                                <p>Usuario3: HOLAAAAA.</p>
+                                <p>Usuario3: Soy nuevo aquí, ¿Que rollo esto?.</p>
+                                <p>Usuario4: ¿Donde es la comida?.</p></td> 
+                        </tr> 
+                    </table>
+                    <label><input type="text"><button><i class="fa fa-send"></i></button></label>
+                </div>
+                <div class="box4">
+
+                </div>
+                <div class="box5">
+
+                </div>
+        </div>
+    </body>
+</html>
